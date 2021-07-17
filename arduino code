@@ -1,0 +1,32 @@
+#include <Servo.h>
+
+int SJ=75; 
+int EJ=45;
+int HJ=20;
+
+
+Servo S;
+Servo E;
+Servo H;
+
+void setup()
+{
+  
+  
+  S.attach(5);
+  S.write(SJ);//this is the shloulder joint will rotate at an angle of 75
+  
+  E.attach(2); 
+  E.write(EJ);//this is the elbow joing will rotate at an angle of 45
+  
+  H.attach(8);
+  H.write(HJ);// this is the hand joint will rotate at an angle of 20
+  
+
+  
+}
+
+void loop()
+{
+  
+}
